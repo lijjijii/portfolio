@@ -1,6 +1,6 @@
 <template>
-  <div >
-
+  <div>
+    <el-button type="primary">Primary</el-button>
   </div>
 </template>
 
@@ -25,16 +25,16 @@ const router = useRouter();
 * 数据部分
 */
 const data = reactive({
-    name: "aaa"
+    name: "aaa",
 })
 onBeforeMount(() => {
-  //console.log('2.组件挂载页面之前执行----onBeforeMount')
+  console.log('2.组件挂载页面之前执行----onBeforeMount')
 }),
 onMounted(() => {
-  //console.log('3.-组件挂载到页面之后执行-------onMounted')
+  console.log('3.-组件挂载到页面之后执行-------onMounted')
 })
 watchEffect(()=>{
-    console.log("watch")
+  console.log("watch")
 })
 // 使用toRefs解构
 // let { } = { ...toRefs(data) } 
