@@ -23,13 +23,13 @@ export default defineComponent({
   },
   setup(){
     return{
-      oDiv, oOpen
+      // oDiv, oOpen
     }
   },
   mounted (){
     console.log("aaa ")
-    oDiv = document.getElementById("header");
-    oOpen = document.getElementsByClassName("open");
+    var oDiv = document.getElementById("header");
+    var oOpen = document.getElementsByClassName("open");
   },
   methods: {
     closeTask() {
